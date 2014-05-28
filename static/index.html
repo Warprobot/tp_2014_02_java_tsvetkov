@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
+</head>
+<body>
+    <div class="wrapper">
+
+        <section class="auth">
+            <p class="auth__paragraph">
+                <img class="auth__image" src="i/fun.jpg" alt="Лама"/>
+            </p>
+            <p class="auth__paragraph">
+                <form class="auth__login" action="/login" method="post">
+                    <div class="login__inputGroup">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="login" placeholder="Логин" required/>
+                    </div>
+                    <div class="login__inputGroup">
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" placeholder="Пароль" required/>
+                    </div>
+                    <div class="login__inputGroup">
+                        <input type="submit" value="Зайти"/>
+                    </div>
+                </form>
+            </p>
+            <p class="auth__paragraph">
+                Нет логина? <a href="/registration">Зарегистрироваться!</a>
+            </p>
+        </section>
+
+    </div>
+</body>
+</html>

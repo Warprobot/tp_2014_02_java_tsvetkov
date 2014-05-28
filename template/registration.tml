@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="wrapper">
+    <div class="error">${error}</div>
+    <section class="auth">
+        <p class="auth__paragraph">
+            <img class="auth__image" src="i/fun.jpg" alt="Лама"/>
+        </p>
+        <p class="auth__paragraph">
+            <form class="auth__login" action="registration" method="post">
+                <div class="login__inputGroup">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="login" placeholder="Логин" required/>
+                </div>
+                <div class="login__inputGroup">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Пароль" required/>
+                </div>
+                <div class="login__inputGroup">
+                    <input type="submit" value="Зарегистрироваться"/>
+                </div>
+            </form>
+        </p>
+    </section>
+</div>
+</body>
+</html>
