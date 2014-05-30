@@ -11,18 +11,18 @@ import java.io.Writer;
 import java.util.Map;
 
 /**
- * Created by warprobot on 29.05.14.
+ * Created by Andrey on 21.02.14.
+ *
  */
 public class PageGenerator {
-    private static final String TEMPLATE_DIR = "template";
+    private static final String HTML_DIR = "tml";
     private static final Configuration CFG = new Configuration();
 
-    public static String getPage(String templateName, Map<String, Object> data) {
+    public static String getPage(String filename, Map<String, Object> data)
+    {
         Writer stream = new StringWriter();
         try {
-            CFG.setDirectoryForTemplateLoading(new File(TEMPLATE_DIR));
-            CFG.setDefaultEncoding("UTF-8");
-            Template template = CFG.getTemplate(templateName);
+            Template template = CFG.getTemplate(HTML_DIR + File.separator + filename);
             template.process(data, stream);
         } catch (IOException | TemplateException e) {
             e.printStackTrace();

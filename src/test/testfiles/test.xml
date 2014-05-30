@@ -1,0 +1,5 @@
+<class type='utils.resource.TestRes'>
+	<str>str</str>
+	<integer>1</integer>
+	<Float>0.0</Float>
+</class>

@@ -1,0 +1,5 @@
+<class type='utils.resource.FrontendRes'>
+	<refresh_period>1000</refresh_period>
+	<log_interval>5000</log_interval>
+	<db_wait_time>6000</db_wait_time>
+</class>

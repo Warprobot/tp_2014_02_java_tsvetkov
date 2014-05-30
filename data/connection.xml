@@ -1,0 +1,6 @@
+<class type='utils.resource.ConnectionRes'>
+	<port>3306</port>
+	<db_name>JavaDB</db_name>
+	<user>root</user>
+	<password></password>
+</class>
